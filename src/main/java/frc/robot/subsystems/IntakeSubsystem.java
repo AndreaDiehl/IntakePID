@@ -24,7 +24,6 @@ public class IntakeSubsystem extends SubsystemBase {
   public IntakeSubsystem() {
     // initialize motor
     m_motor = new CANSparkMax(4, MotorType.kBrushless);
-
     /**
      * The restoreFactoryDefaults method can be used to reset the configuration parameters
      * in the SPARK MAX to their factory default state. If no argument is passed, these
