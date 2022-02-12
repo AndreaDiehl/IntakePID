@@ -23,7 +23,7 @@ public class IntakeSubsystem extends SubsystemBase {
   
   public IntakeSubsystem() {
     // initialize motor
-    m_motor = new CANSparkMax(2, MotorType.kBrushless);
+    m_motor = new CANSparkMax(4, MotorType.kBrushless);
 
     /**
      * The restoreFactoryDefaults method can be used to reset the configuration parameters
@@ -50,7 +50,7 @@ public class IntakeSubsystem extends SubsystemBase {
     kFF = 0; 
     kMaxOutput = 0.2; 
     kMinOutput = -1;
-    maxRPM = 1000;
+    maxRPM = 100;
 
 
     // set PID coefficients
